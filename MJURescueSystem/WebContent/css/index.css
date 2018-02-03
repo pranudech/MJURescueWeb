@@ -1,0 +1,466 @@
+/*** Default  gvNIX ***/
+
+.flag {
+	height: 11px;
+	width: 16px;
+}
+
+body {
+  position: relative; /* For scrollyspy */
+  padding-top: 70px; /* Account for fixed navbar */
+  padding-bottom: 30px;
+  background: #dde9cf;
+}
+	@media (min-width: 768px) and (max-width: 1020px){
+		body {
+		  padding-top: 120px;
+		  
+		}
+	}
+
+/*
+ * Main navigation
+ *
+ * Turn the `.navbar` at the top
+ */
+
+
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+.navbar .navbar-nav > li > a:hover {
+  color: #7a7a3d;
+}
+.navbar .navbar-nav > .active > a,
+
+
+/* Custom theme Bootstrap for gvNIX by DISID */
+
+.navbar {
+	background-color: #bad19e;
+	border-color: #adc98b;
+}
+.navbar .navbar-toggle {
+	border-color: #608224;
+}
+.navbar .navbar-toggle:hover {
+	background-color: #bad19e;
+	border-color: #adc98b;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus,
+.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover {
+	color: #c8efc2;
+	background-color: #43600E;
+}
+.navbar .navbar-nav > li > a {
+color: #008080;
+}
+
+@media (max-width: 767px){
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+		color: #acc47f;
+		white-space: normal;
+	}
+	.navbar-nav .open .dropdown-menu{
+	 max-width: 300px;
+	}
+	.navbar-nav .open .dropdown-menu li{
+   max-width: 300px;
+  }
+  .col-xs-3 button[data-toggle="offcanvas"]{
+    margin: 15px 0 0;
+  }
+}
+
+@media (min-width: 768px){
+	.navbar-nav {
+	float: none;
+	margin: 0 100px;
+
+	}
+}
+
+/* Custom sidebar menu */
+
+#sidebar-wrapper li a{
+	text-decoration: none;
+	}
+.affix#sidebar-wrapper{
+	z-index: 100;
+	}
+
+
+/*
+ * Footer
+ *
+ * Separated section of content at the bottom of all pages
+ */
+
+.bs-footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin-top: 100px;
+  color: #777;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+.footer-links {
+  margin: 10px 0;
+  padding-left: 0;
+}
+.footer-links li {
+  display: inline;
+  padding: 0 2px;
+}
+.footer-links li:first-child {
+  padding-left: 0;
+}
+
+@media (min-width: 768px) {
+  .bs-footer {
+    text-align: left;
+  }
+  .bs-footer p {
+    margin-bottom: 0;
+  }
+}
+
+/*
+ * Alerts
+ *
+ */
+
+.alert{
+	font-size: 0.95em;
+	display: block;
+}
+
+/*
+* Errors
+*
+*/
+.errors {
+    color: #b94a48;
+    display: block;
+}
+
+
+/*
+ * Forms
+ *
+ */
+
+ @media (min-width: 0px) {
+	.form-horizontal .control-label {
+		text-align: right;
+	}
+}
+.btn {
+	margin: 5px 0;
+}
+.btn-group{
+	margin-right:5px;
+}
+
+/*
+ * Custom theme Bootstrap signin.css
+ *
+ */
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/** Custom ui buttons **/
+
+
+.ui-dialog-buttonset{
+	width: 100%;
+}
+
+.ui-dialog-buttonset button {
+	-moz-user-select: none;
+	 border: 1px solid rgba(0, 0, 0, 0);
+	 border-radius: 4px;
+	 cursor: pointer;
+	 display: inline-block;
+	 font-size: 14px;
+	 font-weight: normal;
+	 line-height: 1.42857;
+	 margin-bottom: 0;
+	 padding: 6px 12px;
+	 text-align: center;
+	 vertical-align: middle;
+	 white-space: nowrap;
+	 background-color: #428BCA;
+	 border-color: #357EBD;
+	 color: #FFFFFF;
+     display: block;
+	 padding-left: 0;
+ 	 padding-right: 0;
+	 width: 100%;
+}
+
+/** Icons **/
+
+.input-group-addon.glyphicon {
+  top: 0;
+}
+
+   header.navbar+nav.navbar{
+   /* margin-top: 20px;same margin-bottom .navbar */
+   }
+   .navbar.navbar-default.navbar-fixed-top{
+   margin-top: 50px;
+   }
+   .sidebar.navbar-fixed-top{
+    margin-top: 100px;
+   }
+
+   @media (min-width: 768px) and (max-width: 998px){
+       .navbar.navbar-default.navbar-fixed-top{
+       margin-top: 100px;
+       }
+       .sidebar.navbar-fixed-top{
+        margin-top: 150px;
+       }
+    }
+
+  /* Custom navbar default: global*/
+
+  .navbar.navbar-default{
+    background-color: #ff0000;
+    border-color: #e7e7e7;
+    margin: 0;
+    border-radius: 0;
+  }
+  .navbar.navbar-default .navbar-brand {
+    color: #666;
+    text-shadow: none;
+    min-width: 150px;
+    }
+   .navbar.navbar-default .navbar-nav > li > a {
+    color: #666;
+    text-shadow: none;
+    }
+    .navbar.navbar-default .navbar-nav > li > a {
+    color: #666;
+    text-shadow: none;
+    }
+    .navbar.navbar-default .navbar-nav > li > a:hover{
+    color: #acc47f;
+    }
+    .navbar.navbar-default .navbar-nav > .active > a{
+    color: #fff;
+    background-color: #acc47f;
+    }
+    .navbar.navbar-default .navbar-nav > .active > a:hover{
+    color: #608224;
+    background-color: #acc47f;
+    }
+    .navbar.navbar-default .caret {
+    border-top-color: #ccc;
+    border-bottom-color: #ccc;
+    }
+    .navbar.navbar-default .caret:hover {
+    border-top-color: #333;
+    border-bottom-color: #333;
+    }
+
+
+/* Custom sidebar menu */
+
+ /*Remove rounded coners*/
+
+  nav.sidebar.navbar {
+    border-radius: 0px;
+  }
+
+  nav.sidebar, .main{
+    -webkit-transition: margin 200ms ease-out;
+      -moz-transition: margin 200ms ease-out;
+      -o-transition: margin 200ms ease-out;
+      transition: margin 200ms ease-out;
+  }
+
+  /* Add gap to nav and right windows.*/
+  .main{
+    padding: 10px 10px 0 10px;
+  }
+
+  /* .....NavBar: Icon only with coloring/layout.....*/
+
+  /*small/medium side display*/
+  @media (min-width: 768px) {
+
+    /*Allow main to be next to Nav*/
+    .main{
+      position: absolute;
+      width: calc(100% - 40px); /*keeps 100% minus nav size*/
+      margin-left: 40px;
+      float: right;
+    }
+
+    /*lets nav bar to be showed on mouseover*/
+    nav.sidebar:hover + .main{
+      margin-left: 200px;
+    }
+
+    /*Center Brand*/
+    nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+      margin-left: 0px;
+    }
+    /*Center Brand*/
+    nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+      text-align: center;
+      width: 100%;
+      margin-left: 0px;
+    }
+
+    /*Center Icons*/
+    nav.sidebar a{
+      padding-right: 13px;
+            min-width: 100px;
+    }
+
+    /*custom sidebar nav*/
+        nav.sidebar ul.nav.navbar-nav{
+            margin: 0;
+        }
+        nav.sidebar.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+            color: white;
+        }
+
+    /*adds border top to first nav box */
+    nav.sidebar .navbar-nav > li:first-child{
+      border-top: 1px #e5e5e5 solid;
+    }
+
+    /*adds border to bottom nav boxes*/
+    nav.sidebar .navbar-nav > li{
+      border-bottom: 1px #e5e5e5 solid;
+    }
+    /*adds background on hover*/
+    nav.sidebar .navbar-nav > li:hover{
+        color: #fff;
+            background-color: #43600E;
+    }
+    /*removes border last element*/
+    nav.sidebar .navbar-nav > li.last{
+      border-bottom: none;
+    }
+
+    /* Colors/style dropdown box*/
+    nav.sidebar .navbar-nav .open .dropdown-menu {
+      position: static;
+      float: none;
+      width: auto;
+      margin-top: 0;
+      background-color: transparent;
+      border: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    /*allows nav box to use 100% width*/
+    nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+      padding: 0 0px 0 0px;
+    }
+
+    /*colors dropdown box text */
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+      color: #777;
+    }
+
+    /*gives sidebar width/height*/
+    nav.sidebar{
+      width: 200px;
+      height: 100%;
+      margin-left: -160px;
+      float: left;
+      z-index: 8000;
+      margin-bottom: 0px;
+    }
+
+    /*give sidebar 100% width;*/
+    nav.sidebar li {
+      width: 100%;
+    }
+
+    /* Move nav to full on mouse over*/
+    nav.sidebar:hover{
+      margin-left: 0px;
+    }
+    /*for hiden things when navbar hidden*/
+    .forAnimate{
+      opacity: 0;
+    }
+  }
+
+  /* .....NavBar: Fully showing nav bar..... */
+
+  @media (min-width: 1330px) {
+
+/*     Allow main to be next to Nav
+    .main{
+      width: calc(100% - 200px); keeps 100% minus nav size
+      margin-left: 200px;
+    }
+
+    Show all nav
+    nav.sidebar{
+      margin-left: 0px;
+      float: left;
+    }
+    Show hidden items on nav
+    nav.sidebar .forAnimate{
+      opacity: 1;
+    } */
+  }
+
+  nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
+    color: #CCC;
+    background-color: transparent;
+  }
+
+  nav:hover .forAnimate{
+    opacity: 1;
+  }
+
+  
+  .btn-label {position: relative;left: -12px;display: inline-block;padding: 6px 12px;background: rgba(0,0,0,0.15);border-radius: 3px 0 0 3px;}
+.btn-labeled {padding-top: 0;padding-bottom: 0;}
+.btn { margin-bottom:10px; }
