@@ -9,9 +9,13 @@ import org.apache.tomcat.jdbc.pool.PoolProperties;
 public class MySQLConnectionPool {
 	private static DataSource datasource;
 	private static String driver = "com.mysql.jdbc.Driver";
-	private static String url = "jdbc:mysql://localhost:3306/mju_rescue?useUnicode=true&characterEncoding=UTF-8";
-	private static String username = "root";
-	private static String password = "1234";
+//	private static String url = "jdbc:mysql://localhost:3306/mju_rescue?useUnicode=true&characterEncoding=UTF-8";
+//	private static String username = "root";
+//	private static String password = "1234";
+	
+	private static String url = "jdbc:mysql://sql12.freemysqlhosting.net/sql12219320?useUnicode=true&characterEncoding=UTF-8";
+	private static String username = "sql12219320";
+	private static String password = "msdyp9B9st";
 
 	private static PoolProperties configurePoolProperties(String driver, String url, String username, String password) {
 		PoolProperties properties = new PoolProperties();
